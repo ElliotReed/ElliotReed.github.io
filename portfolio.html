@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-    <header>
-        <div class="container">
   
-          <div id="logo">
-              Elliot Reed
-          </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
   
-          <div id="navLinks">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-          </div>
-  
+  <body>
+    
+    <header w3-include-html="./layouts/navbar.html"></header>
+    
+    <div class="container">
+      <section class="main-content">
+        <div class="accent-color">
+          <h1>Portfolio</h1>
         </div>
-    </header>
-
-  <div class="container">
-    <section class="main-content">
-      <h1>Portfolio</h1>
-      <hr>
-      <div class="portfolio-grid">
-        <div class="card">
-          <img  src="assets/images/hangman.png" alt="Hangman"/>
-          <a href="https://gypsyelliot.github.io/Hangman/">Hangman</a>
-        </div>
-  
-        <div class="card">
-          <img  src="assets/images/gifTastic.png" alt="GifTastic"/>
-          <a href="https://gypsyelliot.github.io/GifTastic/">GifTastic</a>
-        </div>
-  
-        <div class="card">
-          <img  src="assets/images/totallyTrivialTrivia.png" alt="Totally Trivial Trivia"/>
-          <a href="https://gypsyelliot.github.io/TriviaGame/">Totally Trivial Trivia</a>
-        </div>
-  
-        <div class="card">
-          <img  src="assets/images/trainScheduler.png" alt="Train Scheduler"/>
-          <a href="https://gypsyelliot.github.io/TrainScheduler">Train Scheduler</a>
-        </div>
-
-        <div class="card">
-          <img  src="assets/images/audioSauce.png" alt="AudioSauce"/>
-          <a href="https://gypsyelliot.github.io/liri-node-app">AudioSauce</a>
-        </div>
-
-        <div class="card">
-          <img  src="assets/images/liriNodeApp.png" alt="Liri Node App"/>
-          <a href="https://gypsyelliot.github.io/liri-node-app">Liri Node App</a>
-        </div>
-  
-        <div class="card">
-          <img  src="assets/images/crystalCollector.png" alt="The Crystal Collector"/>
-          <a href="https://gypsyelliot.github.io/CrystalCollector">The Crystal Collector</a>
-        </div>
-  
-        <div class="card">
-          <img  src="assets/images/portfolio-1.jpg" alt="Constructor Hangman"/>
-          <a href="https://gypsyelliot.github.io/Constructor-Hangman">Constructor Hangman</a>
-        </div>
-
-        <div class="card">
-          <img  src="assets/images/portfolio-1.jpg" alt="JAZZIZ Scraper"/>
-          <a href=" https://jazziz-scraper.herokuapp.com">JAZZIZ Scraper</a>
-        </div>
-      </div><!-- / portfolio-grid -->
-     
-    </section>
-
-    <div class="sidebar">
-        <h2>Connect with Me</h2>
         <hr>
-        <div class="imgRow">
-          <a href="https://github.com/gypsyelliot"><img class="imgIcon" src="assets/images/github-128.png" alt="Github"></a> 
-          <a href="https://www.linkedin.com/in/elliot-reed-a5255b153/"><img class="imgIcon" src="assets/images/linkedin-128.png" alt="LinkedIn"></a>
-          <a href="https://stackoverflow.com/users/9053286/elliot-reed"><img class="imgIcon" src="assets/images/stackoverflow-128.png" alt="StackOverflow"></a>
-      </div>
-      </div>
-
-  </div><!-- /.container -->
-
-  <footer>
-      &copy Copyright 2018 Elliot Reed
-   </footer>     
-  
-</body>
-</html>
+        <div class="portfolio-grid">
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/Hangman/">
+              <img src="assets/images/hangman.png" alt="Hangman" />
+              <div class="card-container">
+                <h4>Hangman</h4>
+                <p>A simple hangman game</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/GifTastic/">
+              <img src="assets/images/gifTastic.png" alt="GifTastic" />
+              <div class="card-container">
+                <h4>GifTastic</h4>
+                <p>A .gif image searcher</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/TriviaGame/">
+              <img src="assets/images/totallyTrivialTrivia.png" alt="Totally Trivial Trivia" />
+              <div class="card-container">
+                <h4>Totally Trivial Trivia</h4>
+                <p>A trivia game</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/TrainScheduler">
+              <img src="assets/images/trainScheduler.png" alt="Train Scheduler" />
+              <div class="card-container">
+                <h4>Train Scheduler</h4>
+                <p>A train schedule tracker</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="">
+              <img src="assets/images/audioSauce.png" alt="AudioSauce" />
+              <div class="card-container">
+                <h4>AudioSauce</h4>
+                <p>Weather, tunes, chat app</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/CrystalCollector">
+              <img src="assets/images/crystalCollector.png" alt="The Crystal Collector" />
+              <div class="card-container">
+                <h4>The Crystal Collector</h4>
+                <p>A math, memory game</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://jazziz-scraper.herokuapp.com">
+              <img src="assets/images/portfolio-1.jpg" alt="JAZZIZ Scraper" />
+              <div class="card-container">
+                <h4>JAZZIZ Scraper</h4>
+                <p>A scraper</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/Constructor-Hangman">
+              <img src="assets/images/portfolio-1.jpg" alt="Constructor Hangman" />
+              <div class="card-container">
+                <h4>Constructor Hangman</h4>
+                <p>A simple hangman game</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://gypsyelliot.github.io/liri-node-app">
+              <img src="assets/images/liriNodeApp.png" alt="Liri Node App" />
+              <div class="card-container">
+                <h4>Liri Node App</h4>
+                <p>A console game</p>
+              </div>
+            </a>
+          </div><!-- / portfolio-grid -->
+          
+        </section>
+        
+        <section w3-include-html="./layouts/sidebar.html"></section>
+        
+      </div><!-- /.container -->
+      
+      <footer w3-include-html="./layouts/footer.html"></footer>
+      
+      <script src="./assets/js/includeHTML.js"></script>
+      <script type="text/javascript">
+        function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "./assets/js/app.js";
+        document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+        </script>
+    </body>
+    
+    </html>

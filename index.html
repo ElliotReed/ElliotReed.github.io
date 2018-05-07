@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +9,56 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <header>
-      <div class="container">
-
-        <div id="logo">
-            Elliot Reed
-        </div>
-
-        <div id="navLinks">
-          <a href="index.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-        </div>
-
-      </div>
-  </header>
+  <header w3-include-html="./layouts/navbar.html"></header>
 
   <div class="container">
 
     <section class="main-content">
-      <h1>About Me</h1>
+      <div class="accent-color">
+        <h1>About Me</h1>
+      </div>
       <hr>
-      <img class="profileImage" src="assets/images/profile.jpg" alt="Elliot Reed"/>
+      <img class="profileImage" src="assets/images/profile.jpg" alt="Elliot Reed" />
       <p>
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.
+        Full-Stack Web Developer with a background in collaborative music and entertainment. Able to build a web application using
+        full database backend. A quick study of new technologies, and able to work with diverse teams and independently to
+        create projects. // adaptable, curious and passionate about learning and implementing these kinds of solutions //
       </p>
+      <br />
+      <hr />
+      <div class="accent-color">
+        <h3>Technical Skills</h3>
+      </div>
+      <br />
       <p>
-        After completing my bootstrap course, I am confident that I have the skills required for full stack web development. Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.
+        HTML, CSS, Media Queries, Bootstrap, Materialize, JavaScript, JQuery, AJAX, PHP, APIs, JSON, REST, Node, Express, React,
+        React Native, Vue, Angular, GIT, Github, MySQL, Postgresql, MongoDB, Firebase, MS Access, command line, computer
+        science fundamentals
       </p>
     </section>
 
-    <div class="sidebar">
-      <h2>Connect with Me</h2>
-      <hr>
-      <div class="imgRow">
-        <a href="https://github.com/gypsyelliot"><img class="imgIcon" src="assets/images/github-128.png" alt="Github"></a> 
-        <a href="https://www.linkedin.com/in/elliot-reed-a5255b153/"><img class="imgIcon" src="assets/images/linkedin-128.png" alt="LinkedIn"></a>
-        <a href="https://stackoverflow.com/users/9053286/elliot-reed"><img class="imgIcon" src="assets/images/stackoverflow-128.png" alt="StackOverflow"></a>
-    </div>
-    </div>
+    <section w3-include-html="./layouts/sidebar.html"></section>
 
   </div><!-- /.container -->
 
-  <footer>
-     &copy Copyright 2018 Elliot Reed
-  </footer>     
-  
+  <footer w3-include-html="./layouts/footer.html"></footer>
+
+  <script src="./assets/js/includeHTML.js"></script>
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "./assets/js/app.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+    </script>
 </body>
+
 </html>
