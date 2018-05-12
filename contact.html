@@ -12,7 +12,7 @@
 
 <body>
 
-    <header w3-include-html="./layouts/navbar.html"></header>
+  <header w3-include-html="./layouts/navbar.html"></header>
 
   <div class="container">
     <section class="main-content">
@@ -20,14 +20,30 @@
         <h1>Contact</h1>
       </div>
       <hr>
-      <form action="https://formspree.io/elliotmreed@gmail.com">
+      <form
+        id="contactForm" 
+        action=""
+        method='POST'
+        onSubmit="return handleEmail()">
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="text" name="_gotcha" style="display:none" />
         <label  for="name">Name</label>
         <input  type="text" name="name" placeholder="John Smith">
         <label  for="email">Email</label>
         <input  type="email" name="email" placeholder="example@gmail.com">
-        <label  for="message">Message</label>
-        <input id="messageArea"  type="textarea">
-        <button class="formBlock" type="submit" value="Send">Submit</button>
+        <label  for="messageArea">Message</label>
+        <textarea 
+          name="messageArea" 
+          id="messageArea"
+          placeholder="Message..."
+          required>
+        </textarea>
+        <div id="contactSubmitInfo">This message is submitted through Formspree.io</div>
+        <button 
+          class="formBlock" 
+          type="submit" 
+          value="Send">Submit
+        </button>
       </form>
     </section>
 

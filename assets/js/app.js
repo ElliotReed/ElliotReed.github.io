@@ -42,6 +42,23 @@ var navClasses = document.querySelector("nav").classList;
     scrollDetect(homeAction, downAction, upAction);
   });
 
+  // Email
+  function handleEmail() {
+    if (1 === 1) {
+      makeEmailAction()
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function makeEmailAction() {
+    let stringAction = "https://formspree.io/";
+    const firstPart = "elliotmreed";
+    const secondPart = "gmail";
+    stringAction = stringAction + firstPart + '@' + secondPart + ".com";
+    document.getElementById("contactForm").setAttribute("action", stringAction)
+  }
 
 
 
