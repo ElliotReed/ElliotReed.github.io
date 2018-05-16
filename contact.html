@@ -15,11 +15,15 @@
   <header w3-include-html="./layouts/navbar.html"></header>
 
   <div class="container">
+
     <section class="main-content">
+    
       <div class="accent-color">
         <h1>Contact</h1>
       </div>
+    
       <hr>
+    
       <form
         id="contactForm" 
         action=""
@@ -27,24 +31,44 @@
         onSubmit="return handleEmail()">
         <input type="hidden" name="_subject" value="New submission!" />
         <input type="text" name="_gotcha" style="display:none" />
+
         <label  for="name">Name</label>
-        <input  type="text" name="name" placeholder="John Smith">
-        <label  for="email">Email</label>
-        <input  type="email" name="email" placeholder="example@gmail.com">
-        <label  for="messageArea">Message</label>
-        <textarea 
-          name="messageArea" 
-          id="messageArea"
+          <span id="nameError" class="statusMessage"></span>
+          <input  
+          id="name"
+          type="text" 
+          name="name" 
+          placeholder="John Smith"
+          />
+          <label  for="email">Email</label>
+          <span id="emailError" class="statusMessage"></span>
+          <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          />
+          <label  for="message">Message</label>
+          <span id="messageError" class="statusMessage"></span>
+          <textarea 
+          id="message"
+          name="message" 
           placeholder="Message..."
           required>
         </textarea>
-        <div id="contactSubmitInfo">This message is submitted through Formspree.io</div>
+
+        <div id="contactSubmitInfo">
+          This message is submitted through Formspree.io
+        </div>
+        
         <button 
           class="formBlock" 
           type="submit" 
           value="Send">Submit
         </button>
+
       </form>
+
     </section>
 
     <section w3-include-html="./layouts/sidebar.html"></section>
