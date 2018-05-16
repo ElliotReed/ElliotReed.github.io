@@ -196,7 +196,6 @@ footer {
 #navLinks a:hover {
     color: var(--font-light-hover);
 }
-
 /* #endregion */
 
 /* #region main content layout */
@@ -276,10 +275,6 @@ textarea {
     /* border: 1px solid #DDDDDD; */
 }
 
-:focus {
-    border: .1em solid var(--accent-font-color);
-    box-shadow: 0 0 .25em var(--accent-font-color);
-}
 input:focus,
 textarea:focus {
     border: .1em solid var(--accent-font-color);

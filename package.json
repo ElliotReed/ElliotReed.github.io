@@ -1,0 +1,13 @@
+{
+  "name": "elliotreed-portfolio",
+  "version": "2.0.0",
+  "description": "portfolio",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elliot Reed",
+  "license": "MIT"
+}
