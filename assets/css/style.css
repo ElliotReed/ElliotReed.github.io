@@ -36,19 +36,12 @@ html {
 body {
     line-height: 1.5em;
     position: relative;
-    /* top: 7.5em; */
     font-family: Arial, Helvetica, sans-serif;
-    /* min-height: 667px; */
     background-image: url('../images/zig-zag-wool.png');
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
 }
-/* @media screen and (min-width: 27em) {
-    body {
-        top: 6.5em;
-    }
-} */
 
 h1 { 
     display: block;

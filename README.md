@@ -1,4 +1,4 @@
-# Responsive Portfolio
+# [Portfolio](https://elliotreed.github.io/ "Portfolio")
 
 This is a responsive porfolio site built to display projects I have created. 
 There are links to contact information as well as individual GitHub "pages" projects.
