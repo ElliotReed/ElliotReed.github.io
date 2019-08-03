@@ -13,11 +13,13 @@
 			"path": "B:\\apps_javascript\\elliotreed.github.io.TriviaGame"
 		},
 		{
-			"path": "B:\\apps_javascript\\elliotreed.github.io.music-player_gypsyswingrevue"
+			"path": "B:\\.toolkit"
 		},
 		{
-			"path": "B:\\.toolkit"
+			"path": "B:\\apps_javascript\\elliotreed.github.io.GSRMusicPlayer"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "elliotreed.github.io"
+	}
 }

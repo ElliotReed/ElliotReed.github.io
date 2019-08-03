@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#276663"/>
   <title>Contact Elliot Reed</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#276663">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#276663" />
 </head>
 
 <body>
@@ -19,54 +25,33 @@
   <div class="container">
 
     <section class="main-content">
-    
+
       <div class="accent-color">
         <h1>Contact</h1>
       </div>
-    
+
       <hr>
-    
-      <form
-        id="contactForm" 
-        action=""
-        method='POST'
-        onSubmit="return handleEmail()">
+
+      <form id="contactForm" action="" method='POST' onSubmit="return handleEmail()">
         <input type="hidden" name="_subject" value="New submission!" />
         <input type="text" name="_gotcha" style="display:none" />
 
-        <label  for="name">Name</label>
-          <span id="nameError" class="statusMessage"></span>
-        <input  
-          id="name"
-          type="text" 
-          name="name" 
-          placeholder="John Smith"
-        />
-        <label  for="email">Email</label>
-          <span id="emailError" class="statusMessage"></span>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="example@gmail.com"
-        />
-        <label  for="message">Message</label>
-          <span id="messageError" class="statusMessage"></span>
-        <textarea
-          id="message"
-          name="message" 
-          placeholder="Message..."
-          required>
+        <label for="name">Name</label>
+        <span id="nameError" class="statusMessage"></span>
+        <input id="name" type="text" name="name" placeholder="John Smith" />
+        <label for="email">Email</label>
+        <span id="emailError" class="statusMessage"></span>
+        <input id="email" type="email" name="email" placeholder="example@gmail.com" />
+        <label for="message">Message</label>
+        <span id="messageError" class="statusMessage"></span>
+        <textarea id="message" name="message" placeholder="Message..." required>
         </textarea>
 
         <div id="contactSubmitInfo">
           This message is submitted through Formspree.io
         </div>
-        
-        <button 
-          class="formBlock" 
-          type="submit" 
-          value="Send">Submit
+
+        <button class="formBlock" type="submit" value="Send">Submit
         </button>
 
       </form>
@@ -78,20 +63,20 @@
   </div><!-- /.container -->
 
   <footer w3-include-html="./layouts/footer.html"></footer>
-  
+
   <script src="./assets/js/includeHTML.js"></script>
   <script type="text/javascript">
     function downloadJSAtOnload() {
-    var element = document.createElement("script");
-    element.src = "./assets/js/app.js";
-    document.body.appendChild(element);
+      var element = document.createElement("script");
+      element.src = "./assets/js/app.js";
+      document.body.appendChild(element);
     }
     if (window.addEventListener)
-    window.addEventListener("load", downloadJSAtOnload, false);
+      window.addEventListener("load", downloadJSAtOnload, false);
     else if (window.attachEvent)
-    window.attachEvent("onload", downloadJSAtOnload);
+      window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
-    </script>
+  </script>
 </body>
 
 </html>
