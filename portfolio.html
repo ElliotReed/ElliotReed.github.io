@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#276663">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#276663" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#276663">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#276663" />
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header w3-include-html="./layouts/navbar.html"></header>
+  <header w3-include-html="./layouts/navbar.html"></header>
 
-    <div class="container">
-      <section class="main-content">
-        <div class="accent-color">
-          <h1>Portfolio</h1>
+  <div class="container">
+    <section class="main-content">
+      <div class="accent-color">
+        <h1>Portfolio</h1>
+      </div>
+      <hr>
+      <div class="portfolio-grid">
+
+        <div class="card">
+          <a href="https://ElliotReed.net" target="_blank">
+            <img src="assets/images/elliotreed.png" alt="Elliot Reed Website" />
+            <div class="card-container">
+              <h4>ElliotReed.net</h4>
+              <p>Personal website</p>
+            </div>
+          </a>
         </div>
-        <hr>
-        <div class="portfolio-grid">
 
-          <div class="card">
-            <a href="https://ElliotReed.net">
-              <img src="assets/images/elliotreed.png" alt="Elliot Reed Website" />
-              <div class="card-container">
-                <h4>ElliotReed.net</h4>
-                <p>Personal website</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://ElliotReed.github.io/CrystalCollector" target="_blank">
+            <img src="assets/images/crystal-collector.jpg" alt="The Crystal Collector" />
+            <div class="card-container">
+              <h4>The Crystal Collector</h4>
+              <p>A math, memory game</p>
+            </div>
+          </a>
+        </div>
 
-          <div class="card">
-            <a href="https://ElliotReed.github.io/CrystalCollector">
-              <img src="assets/images/crystal-collector.jpg" alt="The Crystal Collector" />
-              <div class="card-container">
-                <h4>The Crystal Collector</h4>
-                <p>A math, memory game</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://www.gypsyswingrevue.com/" target="_blank">
+            <img src="assets/images/gypsy-swing-revue.jpg" alt="Gypsy Swing Revue" />
+            <div class="card-container">
+              <h4>Gypsy Swing Revue</h4>
+              <p>Band website</p>
+            </div>
+          </a>
+        </div>
 
-          <div class="card">
-            <a href="https://www.gypsyswingrevue.com/">
-              <img src="assets/images/gypsy-swing-revue.jpg" alt="Gypsy Swing Reuev" />
-              <div class="card-container">
-                <h4>Gypsy Swing Revue</h4>
-                <p>Band website</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://metronome.elliotreed.net" target="_blank">
+            <img src="assets/images/metronome.jpg" alt="Metronome" />
+            <div class="card-container">
+              <h4>Metronome</h4>
+              <p>A React metronome</p>
+            </div>
+          </a>
+        </div>
 
-          <div class="card">
-            <a href="https://ElliotReed.github.io/Timer/">
-              <img src="assets/images/timer.jpg" alt="Timer" />
-              <div class="card-container">
-                <h4>Timer</h4>
-                <p>A React timer</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://ElliotReed.github.io/Timer/" target="_blank">
+            <img src="assets/images/timer.jpg" alt="Timer" />
+            <div class="card-container">
+              <h4>Timer</h4>
+              <p>A React timer</p>
+            </div>
+          </a>
+        </div>
 
-          <!-- <div class="card">
-            <a href="https://ElliotReed.github.io/Hangman/">
+        <!-- <div class="card">
+            <a href="https://ElliotReed.github.io/Hangman/" target="_blank">
               <img src="assets/images/hangman.png" alt="Hangman" />
               <div class="card-container">
                 <h4>Hangman</h4>
@@ -81,8 +91,8 @@
             </a>
           </div> -->
 
-          <!-- <div class="card">
-            <a href="https://ElliotReed.github.io/GifTastic/">
+        <!-- <div class="card">
+            <a href="https://ElliotReed.github.io/GifTastic/" target="_blank">
               <img src="assets/images/gifTastic.png" alt="GifTastic" />
               <div class="card-container">
                 <h4>GifTastic</h4>
@@ -91,87 +101,58 @@
             </a>
           </div> -->
 
-          <div class="card">
-            <a href="https://ElliotReed.github.io/TriviaGame/">
-              <img src="assets/images/trivia.jpg" alt="Totally Trivial Trivia" />
-              <div class="card-container">
-                <h4>Totally Trivial Trivia</h4>
-                <p>A trivia game</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://ElliotReed.github.io/TriviaGame/" target="_blank">
+            <img src="assets/images/trivia.jpg" alt="Totally Trivial Trivia" />
+            <div class="card-container">
+              <h4>Totally Trivial Trivia</h4>
+              <p>A trivia game</p>
+            </div>
+          </a>
+        </div>
 
-          <div class="card">
-            <a href="https://elliotreed.github.io/GSRMusicPlayer/">
-              <img src="assets/images/gsr_music-player.png" alt="Gypsy Swing Revue Music Player" />
-              <div class="card-container">
-                <h4>Gypsy Swing Revue Music Player</h4>
-                <p>A music player</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://elliotreed.github.io/GSRMusicPlayer/" target="_blank">
+            <img src="assets/images/gsr_music-player.png" alt="Gypsy Swing Revue Music Player" />
+            <div class="card-container">
+              <h4>Gypsy Swing Revue Music Player</h4>
+              <p>A music player</p>
+            </div>
+          </a>
+        </div>
 
-          <div class="card">
-            <a href="https://ElliotReed.github.io/weather/">
-              <img src="assets/images/weather.jpg" alt="Timer" />
-              <div class="card-container">
-                <h4>Weather</h4>
-                <p>A simple weather app</p>
-              </div>
-            </a>
-          </div>
+        <div class="card">
+          <a href="https://ElliotReed.github.io/weather/" target="_blank">
+            <img src="assets/images/weather.jpg" alt="Timer" />
+            <div class="card-container">
+              <h4>Weather</h4>
+              <p>A simple weather app</p>
+            </div>
+          </a>
+        </div>
 
-          <!-- <div class="card">
-            <a href="https://ElliotReed.github.io/TrainScheduler">
-              <img src="assets/images/trainScheduler.png" alt="Train Scheduler" />
-              <div class="card-container">
-                <h4>Train Scheduler</h4>
-                <p>A train schedule tracker</p>
-              </div>
-            </a>
-          </div> -->
+        <!-- / portfolio-grid -->
+    </section>
 
-          <!-- <div class="card">
-            <a href="">
-              <img src="assets/images/audioSauce.png" alt="AudioSauce" />
-              <div class="card-container">
-                <h4>AudioSauce</h4>
-                <p>Weather, tunes, chat app</p>
-              </div>
-            </a>
-          </div> -->
+    <section w3-include-html="./layouts/sidebar.html"></section>
 
-          <!-- <div class="card">
-            <a href="https://jazziz-scraper.herokuapp.com">
-              <img src="assets/images/portfolio-1.jpg" alt="JAZZIZ Scraper" />
-              <div class="card-container">
-                <h4>JAZZIZ Scraper</h4>
-                <p>A scraper</p>
-              </div>
-            </a>
-          </div>           -->
-         <!-- / portfolio-grid -->
-         </section>
+  </div><!-- /.container -->
 
-        <section w3-include-html="./layouts/sidebar.html"></section>
+  <footer w3-include-html="./layouts/footer.html"></footer>
 
-      </div><!-- /.container -->
+  <script src="./assets/js/includeHTML.js"></script>
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "./assets/js/app.js";
+      document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
+</body>
 
-      <footer w3-include-html="./layouts/footer.html"></footer>
-
-      <script src="./assets/js/includeHTML.js"></script>
-      <script type="text/javascript">
-        function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "./assets/js/app.js";
-        document.body.appendChild(element);
-        }
-        if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
-        </script>
-    </body>
-
-    </html>
+</html>
