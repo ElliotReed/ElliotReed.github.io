@@ -4,7 +4,7 @@ var navClasses = document
   .classList;
 
 function homeAction() {
-  console.log("home");
+  // console.log("home");
 }
 
 function downAction() {
@@ -60,7 +60,6 @@ function handleEmail() {
     .trim();
 
   var formContent = new formValidator(name, email, message);
-  // console.log(formContent.name);
   if (!formContent.validateName()) {
     const nameError = document.getElementById('nameError');
     nameError.innerText = "Please enter a valid name.";
@@ -95,7 +94,6 @@ function formValidator(name, email, message) {
   this.message = message;
 
   this.stripHTML = function (string) {
-    console.log(string);
     string = string
       .replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")
       .split('/')[0];
