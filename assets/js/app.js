@@ -119,9 +119,9 @@ function formValidator(name, email, message) {
 
 function makeEmailAction() {
 	let stringAction = 'https://formspree.io/';
-	const firstPart = 'elliotmreed';
-	const secondPart = 'gmail';
-	stringAction = stringAction + firstPart + '@' + secondPart + '.com';
+	const firstPart = 'elliot_dev';
+	const secondPart = 'elliotreed';
+	stringAction = stringAction + firstPart + '@' + secondPart + '.net';
 	document.getElementById('contactForm').setAttribute('action', stringAction);
 }
 
